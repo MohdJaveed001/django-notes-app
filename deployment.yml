@@ -18,7 +18,7 @@ spec:
       - name: djangonotescontainers
         image: javeedit/djangonotes
         ports:
-          - containerPort: 8080
+          - containerPort: 8000
 ---
 apiVersion: v1
 kind: Service
@@ -30,6 +30,6 @@ spec:
     app: djangonotesapp
   ports:
     - port: 80
-      targetPort: 8080
+      targetPort: 8000
       nodePort: 30001
 ...
