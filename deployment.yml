@@ -6,9 +6,9 @@ metadata:
 spec: 
   replicas: 3
   selector:
-    matchlabel:
+    matchlabels:
       app: djangonotesapp
-  templates:
+  template:
     metadata:
       name: djangonotespods 
       labels: 
